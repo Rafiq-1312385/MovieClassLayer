@@ -1,19 +1,23 @@
 package MovieClassLayer;
 
+import java.util.ArrayList;
 import java.util.List;
+
 
 public class Film {
 	public String FilmID;
 	public String FilmName;
 	public String ImdbRating;
 	public String FilmYear;
-	public List<Actor> Actors;
-	public List<Director> Directors;
+	
+	public List<Actor> Actors = new ArrayList();
+	public List<Director> Directors = new ArrayList();
+	
 
 
 	public Film(){
-		this.Directors =null;
-		this.Actors =null;
+		this.Directors = new ArrayList();
+		this.Actors = new ArrayList();
 	}
 
 	public Film(String filmID, String filmName, String imdbRating, String filmYear) {
@@ -28,8 +32,8 @@ public class Film {
 		this.FilmName = filmName;
 		this.ImdbRating = imdbRating;
 		this.FilmYear = filmYear;
-		this.Directors =directors;
-		this.Actors =actors;
+		this.Directors = directors;
+		this.Actors = actors;
 
 	}
 
