@@ -8,9 +8,9 @@ public class Films {
 
 
 	public List<Film> Films;
-	public Films (List<Film> Films)
+	public Films (List<Film> films)
 	{
-		this.Films= Films;
+		this.Films= films;
 	}
 
 	public Films(){
@@ -18,4 +18,3 @@ public class Films {
 		this.Films= null;
 	}
 }
-//hello from the other side!!!!!!
