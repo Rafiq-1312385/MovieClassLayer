@@ -3,30 +3,83 @@ package MovieClassLayer;
 import java.util.List;
 
 public class Film {
-	public String FID;
-	public String FName;
-	public String FRating;
-	public String FYear;
+	public String FilmID;
+	public String FilmName;
+	public String ImdbRating;
+	public String FilmYear;
 	public List<Actor> Actors;
 	public List<Director> Directors;
 
 
 	public Film(){
-		this.FID= null;
-		this.FName = null;
-		this.FRating = null;
-		this.FYear = null;
 		this.Directors =null;
 		this.Actors =null;
 	}
 
-	public Film(String ID, String Name, String Rating, String Year, List<Director> Director, List<Actor> Actor) {
-		this.FID = ID;
-		this.FName = Name;
-		this.FRating = Rating;
-		this.FYear = Year;
-		this.Directors =Director;
-		this.Actors =Actor;
+	public Film(String filmID, String filmName, String imdbRating, String filmYear) {
+		this.FilmID = filmID;
+		this.FilmName = filmName;
+		this.ImdbRating = imdbRating;
+		this.FilmYear = filmYear;
 
 	}
+	public Film(String filmID, String filmName, String imdbRating, List<Director> directors, List<Actor> actors,String filmYear) {
+		this.FilmID = filmID;
+		this.FilmName = filmName;
+		this.ImdbRating = imdbRating;
+		this.FilmYear = filmYear;
+		this.Directors =directors;
+		this.Actors =actors;
+
+	}
+
+	public String getFilmID() {
+		return FilmID;
+	}
+
+	public void setFilmID(String filmID) {
+		FilmID = filmID;
+	}
+
+	public String getFilmName() {
+		return FilmName;
+	}
+
+	public void setFilmName(String filmName) {
+		FilmName = filmName;
+	}
+
+	public String getImdbRating() {
+		return ImdbRating;
+	}
+
+	public void setImdbRating(String imdbRating) {
+		ImdbRating = imdbRating;
+	}
+
+	public String getFilmYear() {
+		return FilmYear;
+	}
+
+	public void setFilmYear(String filmYear) {
+		FilmYear = filmYear;
+	}
+
+	public List<Actor> getActors() {
+		return Actors;
+	}
+
+	public void setActors(List<Actor> actors) {
+		Actors = actors;
+	}
+
+	public List<Director> getDirectors() {
+		return Directors;
+	}
+
+	public void setDirectors(List<Director> directors) {
+		Directors = directors;
+	}
+	
+
 }
