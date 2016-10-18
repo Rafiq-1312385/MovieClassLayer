@@ -10,14 +10,14 @@ public class Film {
 	public String ImdbRating;
 	public String FilmYear;
 	
-	public List<Actor> Actors = new ArrayList();
-	public List<Director> Directors = new ArrayList();
+	public List<Actor> Actors = new ArrayList<>();
+	public List<Director> Directors = new ArrayList<>();
 	
 
 
 	public Film(){
-		this.Directors = new ArrayList();
-		this.Actors = new ArrayList();
+		this.Directors = new ArrayList<>();
+		this.Actors = new ArrayList<>();
 	}
 
 	public Film(String filmID, String filmName, String imdbRating, String filmYear) {
