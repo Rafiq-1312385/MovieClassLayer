@@ -10,7 +10,7 @@ public class Film {
 	public String ImdbRating;
 	public String FilmYear;
 	
-	public List<Actor> Actors = new ArrayList<>();
+	public List<Actor> Actors = new ArrayList<>(); 
 	public List<Director> Directors = new ArrayList<>();
 	
 
