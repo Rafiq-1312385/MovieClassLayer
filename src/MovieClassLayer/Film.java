@@ -73,16 +73,16 @@ public class Film {
 		return Actors;
 	}
 
-	public void setActors(List<Actor> actors) {
-		Actors = actors;
+	public void setActors(Actor actors) {
+		Actors.add(actors); //new
 	}
 
 	public List<Director> getDirectors() {
 		return Directors;
 	}
 
-	public void setDirectors(List<Director> directors) {
-		Directors = directors;
+	public void setDirectors(Director directors) {
+		Directors.add(directors);
 	}
 
 

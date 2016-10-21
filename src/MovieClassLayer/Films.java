@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Films{
 
-	public List<Film> Films = new ArrayList<>();
+	private List<Film> Films = new ArrayList<>();
 
 	public Films (List<Film> Films)
 	{
@@ -19,10 +19,11 @@ public class Films{
 	}
 
 	public List<Film> getFilms() {
-		return Films;
+		return this.Films;
 	}
 
-	public void setFilms(List<Film> films) {
-		Films = films;
+	public void setFilms(List<Film> film) {
+		
+		this.Films=film;
 	}
 }
